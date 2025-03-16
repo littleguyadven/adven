@@ -14,47 +14,116 @@
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
-
-.content
-  position: relative
-  z-index: 1
-  text-align: center
-  color: black
-  padding: 20px
-  height: 100%
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
-  h1
-    font-size: 3em
-    margin-bottom: 20px
-  p
-    font-size: 1.2em
-
-  .profile
+  .content
+    position: relative
+    z-index: 1
+    text-align: center
+    padding: 20px
     display: flex
+    width: 50%
+    margin: auto
     flex-direction: column
     justify-content: center
     align-items: center
-    width: 60%
-    margin: auto
-    img
-      width: 100px
-      height: 100px
-      border-radius: 50%
+    h1
+      color: white
+      font-weight: bold
+      margin: 8px auto
+    p
+      font-size: 1.2em
 
-  .links
-    width: 70%
-    height: 100vh
-    margin: auto
-    display: flex
-    flex-direction: column
-    justify-contents: center
-    align-items: center
-    a
+    .profile
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      width: 60%
+      margin: auto
+      img
+        width: 100px
+        height: 100px
+        border-radius: 50%
+
+    .link
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 320px
+      padding: 15px
+      font-size: 18px
+      font-weight: bold
+      color: white
       text-decoration: none
-    img
-      width: 50px
-      height: 50px
-      border-radius: 50%
+      border: 2px solid white
+      border-radius: 50px
+      transition: 0.3s ease-in-out
+      background: rgba(255, 255, 255, 0.1)
+      margin: 5px auto
+      position: relative
+      &:hover
+        background: white
+        transform: scale(1.05)
+        color: Black
+
+      img
+        width: 25px
+        height: 25px
+        margin-right: 10px
+        border-radius: 5px
+
+/* Hover Effect
+
+/* Icons inside Links
+
+
+.mobile-background
+  display: none
+
+@media (max-width: 768px) 
+  .video-background
+    display: none
+  .mobile-background
+    display: block
+    .content
+      position: relative
+      z-index: 1
+      text-align: center
+      color: black
+      padding: 20px
+      height: 100%
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      h1
+        font-size: 3em
+        margin-bottom: 20px
+      p
+        font-size: 1.2em
+
+      .profile
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 60%
+        margin: auto
+        img
+          width: 100px
+          height: 100px
+          border-radius: 50%
+
+      .links
+        width: 70%
+        height: 100vh
+        margin: auto
+        display: flex
+        flex-direction: column
+        justify-contents: center
+        align-items: center
+        a
+          text-decoration: none
+        img
+          width: 50px
+          height: 50px
+          border-radius: 50%
